@@ -42,6 +42,3 @@ Multi-variable regression where the explanatory variables are word and country a
 
 ### Computational steps:
 We will run 345 parallel CHTC jobs (one per word). Each job summarizes its file by country, then we will combine the results in python. 
-
-Repo:
-GitHub_Repository 
