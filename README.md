@@ -4,7 +4,9 @@
 Quick Draw (https://quickdraw.withgoogle.com/?locale=en_US) is an online game where players get a prompt and have 20 seconds to draw it and the game tries to guess the object in real time. Screenshot of my game results for context:
 
 ### Command to get data:
-wget “https://storage.googleapis.com/quickdraw_dataset/full/simplified/$word.ndjson” where $word is the prompt like flower, tornado, etc *important note: some words have spaces like The Great Wall of China, so $word would be The%20Great%20Wall%20of%20China. I found the download url from poking around in the github repository and eventually finding this link: https://console.cloud.google.com/storage/browser/_details/quickdraw_dataset/full/simplified/The%20Great%20Wall%20of%20China.ndjson;tab=live_object*
+wget “https://storage.googleapis.com/quickdraw_dataset/full/simplified/$word.ndjson” where $word is the prompt like flower, tornado, etc 
+
+*important note: some words have spaces like The Great Wall of China, so $word would be The%20Great%20Wall%20of%20China. I found the download url from poking around in the github repository and eventually finding this link: https://console.cloud.google.com/storage/browser/_details/quickdraw_dataset/full/simplified/The%20Great%20Wall%20of%20China.ndjson;tab=live_object*
 
 ### Questions of Interest:
 Do some countries draw better than others? Which objects are hardest to draw? Are sports related objects on average easier to draw globally compared to other categories of objects? 
