@@ -18,8 +18,8 @@ import json, csv, sys
 writer = csv.writer(sys.stdout)  #creates object 
 writer.writerow(["word", "countrycode", "recognized"]) #makes the header 
 for line in open(sys.argv[1]): #need index 1 because of python passing the script as index 0 so actual file is 1
-d = json.loads(line) #turn json text into dictionary so you can call names 
-writer.writerow([d["word"], d["countrycode"], d["recognized"]]) #pulls out the three needed cols from json and puts them into the csv
+    d = json.loads(line) #turn json text into dictionary so you can call names 
+    writer.writerow([d["word"], d["countrycode"], d["recognized"]]) #pulls out the three needed cols from json and puts them into the csv
 ' \
 "${word}.ndjson" > "csv_outputs/${word}.csv" #reads input as json converts to csv and redirects into new directory
 
