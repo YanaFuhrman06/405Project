@@ -23,6 +23,6 @@ for line in open(sys.argv[1]): #need index 1 because of python passing the scrip
 ' \
 	"${word}.ndjson" > "csv_outputs/${word}.csv" #reads input as json converts to csv and redirects into new directory
 
-rm "${word}.ndjson
+rm "${word}.ndjson"
 
 
