@@ -1,7 +1,7 @@
 # Project Overview
 
 ### Context: 
-Quick Draw (https://quickdraw.withgoogle.com/?locale=en_US) is an online game where players get a prompt and have 20 seconds to draw it and the game tries to guess the object in real time. Screenshot of my game results for context:
+Quick Draw (https://quickdraw.withgoogle.com/?locale=en_US) is an online game where players get a prompt and have 20 seconds to draw it and the game tries to guess the object in real time. 
 
 ### Command to get data:
 wget “https://storage.googleapis.com/quickdraw_dataset/full/simplified/$word.ndjson” where $word is the prompt like flower, tornado, etc 
